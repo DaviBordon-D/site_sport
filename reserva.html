@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservas dos sonhos</title>
+
+</head>
+<body>
+    <style>
+        .mg {
+            margin: 5px
+        }
+    </style>
+    <h1>Bem vindo ao melhor site de reservas!</h1>
+    <h2>Faça sua reserva dos sonhos pelo melhor preço e nos melhores lugares.</h2>
+
+    <div style="width: 500px; border: outset;">
+        <form action="" method="post">
+            <fieldset> 
+                <legend>Dados</legend>
+
+                <label for="name">
+                    Nome:
+                    <input type="text" id="name" class="mg" placeholder="exemplo: Clodomildo Rocha">
+                </label>
+                <br>
+                <label for="email">
+                    E-mail:
+                    <input type="email" id="email" class="mg" placeholder="exemplo:clodomildo123@gmail.com">
+                </label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Serviços</legend>
+
+                <label style="display: flex;">
+                    <input type="checkbox" id="BuyPassage">Compra de Passagens.
+                </label>
+                <label style="display: flex;">
+                    <input type="checkbox" id="Reserve">Reserva de Hospedagem.
+                </label>
+                <label style="display: flex;">
+                    <input type="checkbox" id="Rent">Aluguel de Veículos.
+                </label>
+            </fieldset>
+    
+            <fieldset style="flex-direction: column;">
+                <legend>Forma de Pagamento</legend>
+
+                <label style="display: flex;">
+                    <input name="formaPagamento" class="radius" type="radio" value="Cartão de Crédito.">Cartão de Crédito.
+                </label>
+                <label style="display: flex;">
+                    <input name="formaPagamento" class="radius" type="radio" value="Boleto.">Boleto.
+                </label>
+                <label style="display: flex;">
+                    <input name="formaPagamento" class="radius" type="radio" value="Pix." checked>Pix.
+                </label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Prazo do Pagamento</legend>
+
+                <select name="prazoPagamento" id="prazoPagar">
+                    <option value="aVista">À Vista.</option>
+                    <option value="cincoSemJuros">5x Sem Juros.</option>
+                    <option value="dezComJuros">10x Com Juros.</option>
+                </select>
+            </fieldset>
+            <fieldset>
+                <legend>
+                    Deixe seu comentário
+                </legend>
+                <textarea name="textComment" rows="5" cols="50" id="comentarioUser"></textarea>
+            </fieldset>
+            <br>
+            <button id="finalizar" type="submit" style="border-radius: 39px;">Finalizar.</button>
+        </form>
+    </div>
+</body>
+</html>

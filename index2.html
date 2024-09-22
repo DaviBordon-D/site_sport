@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"/>
+		<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <script src="aula1.js"></script>
+	</head>
+	<style>
+		.div-style {
+			border: 1px solid black;
+			border-radius: 5px;
+			padding: 1rem;
+			margin-top: 5px;
+		}
+        .border-radius{
+            border: 2px solid;
+            border-radius: 7px;
+            padding: 1rem;
+        }
+        .mg{
+            padding: 1rem;
+        }
+	</style>
+	<body>
+		<form onsubmit="event.preventDefault();">
+			<div class="div-style w-100">
+				<legend>Formulário dos Funcionários</legend>
+				<div class="d-flex gap-3 col-12 mg">
+					<div class="d-column">
+						<h5>Desenvolvedor</h5>
+						<div class="d-flex flex-column gap-3 col-12 border-radius">
+                            <div class="d-flex gap-3 col-6">
+                                <label class="gap-3">Nome</label>
+                                <input id="nameDev" type="text" required placeholder="Exmeplo: Clodovelson" />
+                                <label class="gap-3">Idade</label>
+                                <input id="idadeDev" type="number" required placeholder="39" />
+                            </div>
+                            <div class="d-flex gap-3 col-6">
+                                <label class="gap-3">Cargo</label>
+                                <input id="cargoDev" type="text" required placeholder="Exmeplo: Desenvolvedor" />
+                                <label class="gap-3">Linguagem</label>
+                                <input id="linguagem" type="text" required placeholder="PHP" />
+                            </div>
+						</div>
+					</div>
+
+					<div class="d-column">
+						<h5>Gerente</h5>
+						<div class="d-flex flex-column gap-3 col-12 border-radius">
+                            <div class="d-flex gap-3 col-6">
+                                <label class="gap-3">Nome</label>
+                                <input id="nameGer" type="text" required placeholder="Exemplo: Godofreda" />
+                                <label class="gap-3">Idade</label>
+                                <input id="idadeGer" type="number" required placeholder="35" />
+                            </div>
+                            <div class="d-flex gap-3 col-6">
+                                <label class="gap-3">Cargo</label>
+                                <input id="cargoGer" type="text" required placeholder="Exemplo: Gerente de Vendas" />
+                                <label class="gap-3">Departamento</label>
+                                <input id="departamento" type="text" required placeholder="Vendas" />
+                            </div>
+						</div>
+					</div>
+				</div>
+                <button class="btn btn-dark" style="margin-left: 15px;" type="submit" onclick="validateInformation();">Pronto</button>
+			</div>
+		</form>
+	</body>
+</html>
